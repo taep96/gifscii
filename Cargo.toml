@@ -1,0 +1,22 @@
+[package]
+name = "gifscii"
+version = "1.0.0"
+edition = "2021"
+
+description = "A CLI to animate GIFs in the terminal"
+categories = ["command-line-utilities", "multimedia::images"]
+keywords = ["gif", "terminal", "animation"]
+authors = ["taep96 <taep96@cock.li>", "Nora <nora.ja2605@gmail.com>"]
+repository = "https://github.com/taep96/gifscii"
+homepage = "https://taep96.moe/projects/squircle-path"
+license = "MIT"
+readme = "README.md"
+
+[dependencies]
+anyhow = "1.0"
+clap = { version = "4.5.4", features = ["derive"] }
+clio = { version = "0.3.5", features = ["clap-parse", "http-ureq"] }
+crossterm = "0.27"
+ctrlc = "3.4"
+image = "0.25.1"
+itertools = "0.12.1"
